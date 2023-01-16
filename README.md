@@ -1,6 +1,6 @@
-# Teste_Técnico
+# Teste Técnico Givaways
 
-Projeto Backend realizado em Node.js com o framework express, banco de dados relacional Postgres. Esse teste técnico tem o intuito de receber requisições e gravar no banco de dados, além de uma rota adicional para consumir uma API e gravar os dados recebidos no banco de dados.
+Projeto Backend realizado em Node.js com o framework express, banco de dados relacional Postgres. Esse teste técnico tem o intuito de receber requisições de um CRUD de produtos e gravar no banco de dados, além de uma rota adicional para consumir uma API e gravar os dados recebidos no banco de dados.
 
 Vale ressaltar, que foi criada uma versão com rotas adicionais de cadastro o login de usuários.
 
