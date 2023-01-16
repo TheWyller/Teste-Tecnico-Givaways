@@ -6,7 +6,7 @@ Vale ressaltar, que foi criada uma versão com rotas adicionais de cadastro o lo
 
 ## Como Rodar a Aplicação
 
-**Vale pontuar que o NODE deve estar instalado na máquina**
+**Atenção o NODE deve estar instalado na máquina**
 
 _O gerenciador de arquivos usado foi o yarn mais pode ser usado o npm_
 
@@ -71,7 +71,7 @@ Caso deseje testar apenas o backend com login, o usuário ADM padrão é:
 
 Os testes realizados foram para os Usuários apenas.
 
-Para todar os testes deve-se estar na raiz do projeto e aplicar os seguintes comandos:
+Para rodar os testes deve-se estar na raiz do projeto e aplicar os seguintes comandos:
 
 ```shell
   cd Backend
@@ -380,6 +380,7 @@ Authorization: None
 | 403 Forbidden  | Invalid Credentials |
 
 ---
+## 3. **Produtos**
 
 ### 1.1. **Criação de um Produto**
 
