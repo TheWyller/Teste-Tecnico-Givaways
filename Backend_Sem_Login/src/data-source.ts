@@ -9,6 +9,13 @@ export const AppDataSource =
         entities: ["src/entities/*.ts"],
         synchronize: true,
       })
+    : process.env.NODE_ENV === "production"
+    ? new DataSource({
+        type: "postgres",
+        url: process.env.DATABASE_URL,
+        entities: ["src/entities/*.ts"],
+        migrations: ["src/migrations/*.ts"],
+      })
     : new DataSource({
         type: "postgres",
         host: process.env.DB_HOST === "dockerdev" ? "postgres" : "localhost",
