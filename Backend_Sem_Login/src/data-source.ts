@@ -13,8 +13,8 @@ export const AppDataSource =
     ? new DataSource({
         type: "postgres",
         url: process.env.DATABASE_URL,
-        entities: ["src/entities/*.ts"],
-        migrations: ["src/migrations/*.ts"],
+        entities: ["build/src/entities/*.js"],
+        migrations: ["build/src/migrations/*.js"],
       })
     : new DataSource({
         type: "postgres",
