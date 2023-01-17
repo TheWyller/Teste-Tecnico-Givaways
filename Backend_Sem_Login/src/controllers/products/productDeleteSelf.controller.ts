@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+declare module "express";
 import productDeleteSelfServices from "../../services/products/productDeleteSelf.services";
 
 const productDeleteSelfController = async (

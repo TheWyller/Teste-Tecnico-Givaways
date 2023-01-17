@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from "express";
+declare module "express";
 import { AppDataSource } from "../data-source";
 import { Product } from "../entities/products.entity";
 

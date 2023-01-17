@@ -1,4 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+declare module "uuid";
 import { v4 as uuid } from "uuid";
 
 @Entity("ibge")

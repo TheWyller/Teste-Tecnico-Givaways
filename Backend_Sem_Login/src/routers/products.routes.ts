@@ -1,3 +1,4 @@
+declare module "express";
 import { Router } from "express";
 import productCreateControllers from "../controllers/products/productCreate.controller";
 import productDeleteSelfController from "../controllers/products/productDeleteSelf.controller";

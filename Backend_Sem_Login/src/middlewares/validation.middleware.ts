@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from "express";
+declare module "express";
 import { AnySchema } from "yup";
 
 const validationMiddleware =

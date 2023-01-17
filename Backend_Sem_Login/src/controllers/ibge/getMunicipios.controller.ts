@@ -1,4 +1,5 @@
 import { Response, Request } from "express";
+declare module "express";
 import getMunicipiosServices from "../../services/ibge/getMunicipios.services";
 
 const getMunicipiosControllers = async (

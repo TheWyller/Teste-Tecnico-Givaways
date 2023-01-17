@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+declare module "express";
 import productListOneServices from "../../services/products/productListOne.services";
 
 const productListOneController = async (

@@ -1,5 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from "typeorm";
 import { v4 as uuid } from "uuid";
+declare module "uuid";
 
 @Entity("products")
 export class Product {

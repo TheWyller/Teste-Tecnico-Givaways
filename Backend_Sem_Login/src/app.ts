@@ -1,4 +1,5 @@
 import "reflect-metadata";
+declare module "express";
 import express from "express";
 
 import productsRoutes from "./routers/products.routes";

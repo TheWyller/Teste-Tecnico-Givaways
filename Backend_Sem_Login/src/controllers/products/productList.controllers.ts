@@ -1,4 +1,5 @@
 import { Response, Request } from "express";
+declare module "express";
 import productlistService from "../../services/products/productList.services";
 
 const productListControllers = async (request: Request, response: Response) => {
