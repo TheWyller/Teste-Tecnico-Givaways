@@ -16,9 +16,22 @@ export const AppDataSource =
         entities: ["build/src/entities/*.js"],
         migrations: ["build/src/migrations/*.js"],
       })
+    : process.env.NODE_ENV === "local"
+    ? new DataSource({
+        type: "postgres",
+        host: "localhost",
+        port: 5432,
+        username: process.env.POSTGRES_USER,
+        password: process.env.POSTGRES_PASSWORD,
+        database: process.env.POSTGRES_DB,
+        synchronize: false,
+        logging: true,
+        entities: ["build/src/entities/*.js"],
+        migrations: ["build/src/migrations/*.js"],
+      })
     : new DataSource({
         type: "postgres",
-        host: process.env.DB_HOST === "dockerdev" ? "postgres" : "localhost",
+        host: "localhost",
         port: 5432,
         username: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
