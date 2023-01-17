@@ -1,5 +1,6 @@
 import "reflect-metadata";
 import express from "express";
+
 import productsRoutes from "./routers/products.routes";
 import ibgeRoutes from "./routers/ibge.routes";
 const app = express();
