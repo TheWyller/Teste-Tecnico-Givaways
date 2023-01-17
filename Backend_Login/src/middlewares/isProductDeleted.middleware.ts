@@ -14,7 +14,9 @@ export const isProductDeletedMiddle = async (
     console.log(product!.deleted_at);
 
     if (!product!.status) {
-      return res.status(404).json({ message: "Product was deleted" });
+      return res
+        .status(404)
+        .json({ message: "Product was deleted or inative {status : false}" });
     } else {
       next();
     }

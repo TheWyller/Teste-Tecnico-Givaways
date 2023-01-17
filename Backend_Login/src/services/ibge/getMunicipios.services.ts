@@ -51,7 +51,11 @@ const getMunicipiosServices = async () => {
     };
   }
 
-  return { status: "Municípios já foram Criados", municípios: getAllData };
+  const getAllDataMod = getAllData.map((elem) => {
+    return { id: elem.id, nome: elem.name };
+  });
+
+  return { status: "Municípios já foram Criados", municípios: getAllDataMod };
 };
 
 export default getMunicipiosServices;
