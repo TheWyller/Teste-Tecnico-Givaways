@@ -1,6 +1,6 @@
 import "reflect-metadata";
-declare module "express";
 import express from "express";
+declare module "express";
 
 import productsRoutes from "./routers/products.routes";
 import ibgeRoutes from "./routers/ibge.routes";

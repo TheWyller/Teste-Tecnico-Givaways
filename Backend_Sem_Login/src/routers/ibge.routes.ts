@@ -1,5 +1,5 @@
-declare module "express";
 import { Router } from "express";
+declare module "express";
 import getMunicipiosControllers from "../controllers/ibge/getMunicipios.controller";
 
 const routes = Router();
