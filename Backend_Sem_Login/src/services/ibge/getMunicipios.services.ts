@@ -44,14 +44,18 @@ const getMunicipiosServices = async () => {
       await ibgeRepository.save(ibgeData);
     });
 
-    const getAllDataFirst = await AppDataSource.getRepository(IBGE).find();
+    await AppDataSource.getRepository(IBGE).find();
 
     return {
       status: "Municípios foram criados com sucesso!",
     };
   }
 
-  return { status: "Municípios já foram Criados", municípios: getAllData };
+  const getAllDataMod = getAllData.map((elem) => {
+    return { id: elem.id, nome: elem.name };
+  });
+
+  return { status: "Municípios já foram Criados", municípios: getAllDataMod };
 };
 
 export default getMunicipiosServices;
